@@ -1,0 +1,179 @@
+/* Reset defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Header */
+.main-header {
+    background: #0d2538;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+.main-header h1 {
+    font-size: 2rem;
+}
+
+.main-header .tagline {
+    font-style: italic;
+    margin-top: 0.3rem;
+}
+
+/* Navigation */
+.main-nav ul {
+    list-style: none;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.main-nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.main-nav a:hover,
+.main-nav a[aria-current="page"] {
+    background: #1b3a57;
+    border-radius: 5px;
+}
+
+/* Container */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+    justify-content: center;
+}
+
+/* Card layout using box model */
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+    margin-bottom: 0.5rem;
+    color: #0d2538;
+}
+
+.styled-list {
+    margin-left: 1.2rem;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    background: #0d2538;
+    color: white;
+    padding: 0.6rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #1b3a57;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 1px solid #0d2538;
+    color: #0d2538;
+}
+
+.btn-outline:hover {
+    background: #0d2538;
+    color: white;
+}
+
+/* Testimonial */
+.testimonial {
+    background: #eaf2f8;
+    padding: 1rem;
+    margin: 1rem;
+    border-left: 5px solid #0d2538;
+    font-style: italic;
+}
+
+/* Footer */
+.main-footer {
+    background: #0d2538;
+    color: white;
+    padding: 1rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-section {
+    flex: 1 1 200px;
+    margin: 0.5rem;
+}
+
+.footer-section a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-content p {
+    line-height: 1.4;
+}
+
+.footer-content a {
+    color: #b0d4ff;
+}
+
+.footer-content a:hover {
+    color: #fff;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
